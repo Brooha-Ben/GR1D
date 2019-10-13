@@ -1,14 +1,146 @@
 def rps():
-  import random
+   import random
 
-  import time
+   import time
+   
+   
+   rndchoice = ["Rock","Paper","Scissors"]
+
+   computer = random.choice(rndchoice)    
+    
+
+   print ("Please choose Rock(Rock), Paper (Paper) or Scissors(Scissors)")
+   user = input()
+
+    if user == (computer):
+        time.sleep(2)
+        print ("The User chose", user," and the computer chose", computer)
+        
+        
+        print ("That round was a Draw!")
+        print (" ")
+        time.sleep(1)
+        
+        print("Would you like to play again? y/n")
+        again = input()
+        if again == "y":
+          rps()
+        else:
+          print("Goodbye")
+
+    elif user == ("Scissors") and computer == ("Paper"):  
+
+        time.sleep(2)
+        print ("The User chose", user," and the computer chose", computer)
+        
+        
+        print ("The User won!!")
+        print (" ")
+        time.sleep(1)
+        
+        print("Would you like to play again? y/n")
+        again = input()
+        if again == "y":
+          rps()
+        else:
+          print("Goodbye")
+
+    elif yourchoice == ("Scissors") and computer == ("Rock"):     
+
+        time.sleep(2)
+        print ("The User chose", user," and the computer chose", computer)
+        
+        
+        print ("The computer won!")
+        print (" ")
+        time.sleep(1)
+        
+        print("Would you like to play again? y/n")
+        again = input()
+        if again == "y":
+          rps()
+        else:
+          print("Goodbye")
 
 
+    elif yourchoice == ("Rock") and computer == ("Paper"):          
 
-  randomchoice = ["rock","paper","scissors"]
+       time.sleep(2)
+        print ("The User chose", user," and the computer chose", computer)
+        
+        
+        print ("The computer won!!")
+        print (" ")
+        time.sleep(1)
+        
+        print("Would you like to play again? y/n")
+        again = input()
+        if again == "y":
+          rps()
+        else:
+          print("Goodbye")
+
+    elif yourchoice == ("Rock") and computer == ("Scissors"):      
+
+       time.sleep(2)
+        print ("The User chose", user," and the computer chose", computer)
+        
+        
+        print ("The User won!!")
+        print (" ")
+        time.sleep(1)
+        
+        print("Would you like to play again? y/n")
+        again = input()
+        if again == "y":
+          rps()
+        else:
+          print("Goodbye")
 
 
+    elif yourchoice == ("Paper") and computer == ("Rock"):     
+
+        time.sleep(2)
+        print ("The User chose", user," and the computer chose", computer)
+        
+        
+        print ("The User won!!")
+        print (" ")
+        time.sleep(1)
+        
+        print("Would you like to play again? y/n")
+        again = input()
+        if again == "y":
+          rps()
+        else:
+          print("Goodbye")
+
+    elif yourchoice == ("Paper") and computer == ("Scissors"): 
+    
+    
+        time.sleep(2)
+        print ("The User chose", user," and the computer chose", computer)
+        
+        
+        print ("The User lost!!")
+        print (" ")
+        time.sleep(1)
+        
+        print("Would you like to play again? y/n")
+        again = input()
+        if again == "y":
+          rps()
+        else:
+          print("Goodbye")
+       
+    else:
+
+        print ("Sorry, what you have entered is invalid, please try again")
+        print ("A common problem is that Rock, Paper or Scissors ,/n, has not been spelt with a capital letter")
+
+        rps()
   
   
   
   
+rps()
