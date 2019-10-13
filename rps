@@ -136,7 +136,7 @@ def rps():
     else:
 
         print ("Sorry, what you have entered is invalid, please try again")
-        print ("A common problem is that Rock, Paper or Scissors ,/n, has not been spelt with a capital letter")
+        print ("A common problem is that Rock, Paper or Scissors \n has not been spelt with a capital letter")
 
         rps()
   
