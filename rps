@@ -1,4 +1,13 @@
 def rps():
+  import random
+
+  import time
+
+
+
+  randomchoice = ["rock","paper","scissors"]
+
+
   
   
   
