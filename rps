@@ -45,7 +45,7 @@ def rps():
         else:
           print("Goodbye")
 
-    elif yourchoice == ("Scissors") and computer == ("Rock"):     
+    elif user == ("Scissors") and computer == ("Rock"):     
 
         time.sleep(2)
         print ("The User chose", user," and the computer chose", computer)
@@ -63,7 +63,7 @@ def rps():
           print("Goodbye")
 
 
-    elif yourchoice == ("Rock") and computer == ("Paper"):          
+    elif user == ("Rock") and computer == ("Paper"):          
 
        time.sleep(2)
         print ("The User chose", user," and the computer chose", computer)
@@ -80,7 +80,7 @@ def rps():
         else:
           print("Goodbye")
 
-    elif yourchoice == ("Rock") and computer == ("Scissors"):      
+    elif user == ("Rock") and computer == ("Scissors"):      
 
        time.sleep(2)
         print ("The User chose", user," and the computer chose", computer)
@@ -98,7 +98,7 @@ def rps():
           print("Goodbye")
 
 
-    elif yourchoice == ("Paper") and computer == ("Rock"):     
+    elif user == ("Paper") and computer == ("Rock"):     
 
         time.sleep(2)
         print ("The User chose", user," and the computer chose", computer)
@@ -115,7 +115,7 @@ def rps():
         else:
           print("Goodbye")
 
-    elif yourchoice == ("Paper") and computer == ("Scissors"): 
+    elif user == ("Paper") and computer == ("Scissors"): 
     
     
         time.sleep(2)
