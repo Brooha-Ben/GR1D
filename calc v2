@@ -1,0 +1,94 @@
+def calc():
+
+    print("""
+    *****************************************
+    *                 Menu:                 *
+    * Enter '1' to add two numbers          *
+    * Enter '2' to subtract two numbers     *
+    * Enter '3' to multiply two numbers     *
+    * Enter '4' to divide two numbers       *
+    * Enter '5' to power two numbers        *
+    * Enter '6' to root two numbers         *
+    * Enter '7' to end the program          *
+    *****************************************
+    """)
+
+    user_input = str(input())
+
+    if user_input == "7":
+            print ("quit") 
+
+    elif user_input == "1":
+            print ("Enter a number")
+            numb_1 = float(input())
+            print ("Enter another number")
+            numb_2 = float(input())
+            print (numb_1 ,"+", numb_2 ,"=")
+            print (numb_1 + numb_2)
+            print ("  ")
+            print ("Would you like to start Calculator again or exit to the Main Menu? (calc/menu)")
+            again = input()
+            if again == "calc":
+                calc()
+            else:
+                print("MM isnt avalable at this time")
+
+    elif user_input == "2":
+            print ("Enter a number")
+            number_1 = float(input())
+            print ("Enter another number")
+            number_2 = float(input())
+            print (number_1 ,"-", number_2 ,"=")
+            print (number_1 - number_2)
+            print ("Would you like to start Calculator again or exit to the Main Menu? (calc/menu)")
+            again = input()
+            if again == "calc":
+                calc()
+            else:
+                print("MM isnt avalable at this time")
+                           
+    elif user_input == "3":
+            print ("Enter a number")
+            numbe_1 = float(input())
+            print ("Enter another number")
+            numbe_2 = float(input())
+            print (numbe_1 ,"x", numbe_2 ,"=")
+            print (numbe_1 * numbe_2)
+            print ("Would you like to start Calculator again or exit to the Main Menu? (calc/menu)")
+            again = input()
+            if again == "calc":
+                calc()
+            else:
+                print("MM isnt avalable at this time") 
+
+    elif user_input == "4":
+            print ("Enter a number")
+            num_1 = float(input())
+            print ("Enter another number")
+            num_2 = float(input())
+            print (num_1 ,"%", num_2 ,"=")
+            print (num_1 / num_2)
+            print ("Would you like to start Calculator again or exit to the Main Menu? (calc/menu)")
+            again = input()
+            if again == "calc":
+                calc()
+            else:
+                print("MM isnt avalable at this time")
+
+    elif user_input == "5":
+        print ("Enter a number you would like to power")
+        no_1 = float(input())
+        print ("Enter the power")
+        no_2 = float(input())
+        print(no_1, "to the power of", no_2, "=")
+        print(no_1 ** no_2)
+        print ("Would you like to start Calculator again or exit to the Main Menu? (calc/menu)")
+        again = input()
+        if again == "calc":
+            calc()
+        else:
+                print("MM isnt avalable at this time")
+
+    else:
+            print("Unknown input")
+calc()
