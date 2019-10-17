@@ -1,0 +1,14 @@
+total = 0
+daynum = 0
+
+daylist = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]
+
+for counter in range (7):
+	print ("Enter max temperature for day",daylist[daynum],": \n")
+	maxtemp = int(input())
+	total = total + maxtemp
+	daynum = daynum + 1
+
+
+averageweekstemp = round(total / 7)
+print ("This week’s average is ", averageweekstemp)
