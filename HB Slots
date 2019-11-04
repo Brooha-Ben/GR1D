@@ -1,0 +1,55 @@
+import random
+import time
+
+credit = 100
+wheel = ("Cherry","Lemon","Orange","Star","Bell","Skull")
+
+print("Would you like to play Slot Machine 2000? y/n")
+play = input()
+while play == "y":
+    print("Credit = " , credit , "p")
+    print("Spend 20p to spin the Machine? y/n")
+    spin = input()
+    while spin == "y":
+        roll_1 = random.choice(wheel)
+        
+        roll_2 = random.choice(wheel)
+        
+        roll_3 = random.choice(wheel)
+
+        credit = credit - 20  
+
+        print(roll_1 + " " + roll_2 + " " + roll_3)
+
+        if roll_1 == roll_2 and roll_2 == roll_3:
+            if roll_2 == "Bell":
+                time.sleep(3)
+                print("JACKPOT")
+                credit = credit + 500
+                spin = "n"
+            elif roll_2 == "Skull":
+                time.sleep(3) 
+                print("You lose all your credit")
+                credit = 0
+                spin = "n"
+            else:
+                time.sleep(3)
+                print("+100")
+                credit = credit + 100
+                spin = "n"
+        
+        elif roll_1 == roll_2 or roll_2 == roll_3 or roll_1 == roll_3:
+            if roll_1 and roll_2 == "Skull":
+                credit = credit - 100
+                spin = "n"
+            elif roll_2 and roll_3 == "Skull":
+                credit = credit - 100
+                spin = "n"
+            elif roll_2 and roll_3 == "Skull":
+                credit = credit - 100
+                spin = "n"
+            else:
+                credit = credit + 50
+                spin = "n"
+        else:
+            spin ="n"
