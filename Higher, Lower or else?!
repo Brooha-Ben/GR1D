@@ -1,0 +1,19 @@
+
+print("Hello User, This program compares 2 numbers together \n to tell you if the first or second number was larger!")
+print("Would you like to run the program? y/n")
+  run = input()
+  while run = y: 
+    print("Please input the first number")
+    no_1 = input()
+    print("Please input the second number")
+    no_2 = input()      
+    if no_1 > no_2:
+      print("Number 1 is larger.")
+      run = n
+    
+    elif no_2 > no_1:
+      print("Number 2 is larger.")
+      run = n
+      
+    else:
+      print("The Numbers are the same.")
