@@ -1,57 +1,147 @@
-print("*****************************************")
-print("Menu:")
-print("Enter '1' to add two numbers")
-print("Enter '2' to subtract two numbers")
-print("Enter '3' to multiply two numbers")
-print("Enter '4' to divide two numbers")
-print("Enter '5' to power two numbers")
-print("Enter '6' to end the program")
-print("*****************************************")
-user_input = str(input())
+import time
 
-if user_input == "6":
-        print ("quit") 
 
-elif user_input == "1":
-        print ("Enter a number")
-        numb_1 = float(input())
-        print ("Enter another number")
-        numb_2 = float(input())
-        print (numb_1 ,"+", numb_2 ,"=")
-        print (numb_1 + numb_2)
 
-elif user_input == "2":
-        print ("Enter a number")
-        number_1 = float(input())
-        print ("Enter another number")
-        number_2 = float(input())
-        print (number_1 ,"-", number_2 ,"=")
-        print (number_1 - number_2)
-                       
-elif user_input == "3":
-        print ("Enter a number")
-        numbe_1 = float(input())
-        print ("Enter another number")
-        numbe_2 = float(input())
-        print (numbe_1 ,"x", numbe_2 ,"=")
-        print (numbe_1 * numbe_2)
+def again():
+    print ("Would you like to run the program again? y/n")
+    again = str(input())
 
-elif user_input == "4":
-        print ("Enter a number")
-        num_1 = float(input())
-        print ("Enter another number")
-        num_2 = float(input())
-        print (num_1 ,"%", num_2 ,"=")
-        print (num_1 / num_2)
+    if again == "y":
+        mainmenu()
 
-elif user_input == "5":
+    else:
+        print("Goodbye")
+
+
+def power():
     print ("Enter a number you would like to power")
+
     no_1 = float(input())
+
     print ("Enter the power")
+
     no_2 = float(input())
+
     print(no_1, "to the power of", no_2, "=")
+
     print(no_1 ** no_2)
 
-else:
-        print("Unknown input")
+def div():
+    print ("Enter a number")
+
+    num_1 = float(input())
+
+    print ("Enter another number")
+
+    num_2 = float(input())
+
+    print (num_1 ,"%", num_2 ,"=")
+
+    print (num_1 / num_2)
+
+
+
+
+def multi():
+    print ("Enter a number")
+
+    numbe_1 = float(input())
+
+    print ("Enter another number")
+
+    numbe_2 = float(input())
+
+    print (numbe_1 ,"x", numbe_2 ,"=")
+
+    print (numbe_1 * numbe_2)
+
+
+def sub():
+    print ("Enter a number")
+
+    number_1 = float(input())
+
+    print ("Enter another number")
+
+    number_2 = float(input())
+
+    print (number_1 ,"-", number_2 ,"=")
+
+    print (number_1 - number_2)
+
+
+def add():
+    print ("Enter a number")
+
+    numb_1 = float(input())
+
+    print ("Enter another number")
+
+    numb_2 = float(input())
+
+    print (numb_1 ,"+", numb_2 ,"=")
+
+    print (numb_1 + numb_2)
+
+def mainmenu():
+    print("*****************************************")
+
+    print("Menu:")
+
+    print("Enter '1' to add two numbers")
+
+    print("Enter '2' to subtract two numbers")
+
+    print("Enter '3' to multiply two numbers")
+
+    print("Enter '4' to divide two numbers")
+
+    print("Enter '5' to power two numbers")
+
+    print("Enter '6' to end the program")
+
+    print("*****************************************")
+
+    user_input = str(input())
+
+
+
+    if user_input == "6":
+
+            print ("Goodbye") 
+
+    elif user_input == "1":
+        add()
+        time.sleep(1.4)
+        again()
+
+    elif user_input == "2":
+        sub()
+        time.sleep(1.4)
+        again()
+        
+        
+    elif user_input == "3":
+        multi()
+        time.sleep(1.4)
+        again()
+
+    elif user_input == "4":
+        div()
+        time.sleep(1.4)
+        again()
+
+
+    elif user_input == "5":
+        power()
+        time.sleep(1.4)
+        again()
+
+    else:
+
+            print("Unknown input")
+            again()
+
+
+mainmenu()
 
